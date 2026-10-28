@@ -1,6 +1,5 @@
 ## Hi there 👋
 
-<!--
 **Joy# Hi there, I'm Shreyansh 👋
 ### Computer Science Student | Problem Solver | Aspiring Software Engineer
 
@@ -88,4 +87,4 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
--->
+
