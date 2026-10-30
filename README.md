@@ -45,9 +45,10 @@
 ### 📊 GitHub Activity & Metrics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Joy2247&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+  <img src="https://github-stats-extended.vercel.app/api?username=Joy2247&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+  <img src="https://streak-stats.demolab.com/?user=Joy2247&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Joy2247&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Joy2247&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
 </p>
 
 ---
