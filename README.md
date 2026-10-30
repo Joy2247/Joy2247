@@ -11,6 +11,16 @@
   </a>
 </p>
 
+<!-- 🍩 Infinite 3D ASCII Donut Loop from ascii.rest -->
+<p align="center">
+  <a href="https://ascii.rest/donut/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Joy2247/Joy2247/main/donut-dark.svg">
+      <img src="https://raw.githubusercontent.com/Joy2247/Joy2247/main/donut-light.svg" alt="A lit 3D torus turning, drawn in ASCII" width="280">
+    </picture>
+  </a>
+</p>
+
 ---
 
 ### 👨‍💻 About Me
