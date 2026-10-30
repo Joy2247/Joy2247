@@ -55,12 +55,12 @@
 
 ### 🚀 Featured Projects & Repositories
 
-| Project / Repository | Tech Stack | Highlights |
-| :--- | :--- | :--- |
-| 🏥 [**LavasaCare Platform**](https://github.com/Joy2247/lavasacare-platform) | `TypeScript` | Full-stack healthcare service platform with robust modern architecture and patient-centric user flows. |
-| 🎓 [**Campus Learn**](https://github.com/Joy2247/campus_learn) | `HTML5` / `CSS3` | Interactive student learning hub designed to share academic resources, notes, and study guides. |
-| 🌐 [**First Website Showcase**](https://github.com/Joy2247/First-Website) | `HTML5` / `CSS3` | Foundational web development project showcasing clean semantic layout and responsive CSS styling. |
-| ⚡ **Algorithms & Systems** | `C++` / `C` / `Python` | Core problem solving, Data Structures & Algorithms, and automated system scripting. |
+| Project / Repository | Tech Stack | Highlights | Live Status |
+| :--- | :--- | :--- | :--- |
+| 🏥 [**LavasaCare Platform**](https://github.com/Joy2247/lavasacare-platform) | `TypeScript` | Full-stack healthcare service platform with robust modern architecture and patient-centric user flows. | [![Stars](https://img.shields.io/github/stars/Joy2247/lavasacare-platform?style=flat-square&color=blue)](https://github.com/Joy2247/lavasacare-platform) |
+| 🎓 [**Campus Learn**](https://github.com/Joy2247/campus_learn) | `HTML5` / `CSS3` | Interactive student learning hub designed to share academic resources, notes, and study guides. | [![Stars](https://img.shields.io/github/stars/Joy2247/campus_learn?style=flat-square&color=blue)](https://github.com/Joy2247/campus_learn) |
+| 🌐 [**First Website Showcase**](https://github.com/Joy2247/First-Website) | `HTML5` / `CSS3` | Foundational web development project showcasing clean semantic layout and responsive CSS styling. | [![Stars](https://img.shields.io/github/stars/Joy2247/First-Website?style=flat-square&color=blue)](https://github.com/Joy2247/First-Website) |
+| ⚡ **Algorithms & Systems** | `C++` / `C` / `Python` | Core problem solving, Data Structures & Algorithms, and automated system scripting. | ![Status](https://img.shields.io/badge/Active-DSA-success?style=flat-square) |
 
 ---
 
@@ -73,10 +73,12 @@
   <a href="mailto:shreyansh2368@gmail.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://linkedin.com">
+  <!-- Replace YOUR_LINKEDIN with your exact username -->
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://leetcode.com">
+  <!-- Replace YOUR_LEETCODE with your exact username -->
+  <a href="https://leetcode.com/YOUR_LEETCODE">
     <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" />
   </a>
 </p>
