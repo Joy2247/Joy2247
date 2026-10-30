@@ -1,9 +1,9 @@
 # Hi there, I'm Shreyansh 👋
 ### Computer Science Student | Problem Solver | Aspiring Software Engineer
 
-<!-- ⚡ Animated Terminal & 3D ASCII Cube Showcase -->
+<!-- ⚡ Animated Terminal & 3D ASCII Torus Showcase -->
 <p align="center">
-  <img src="./ascii-animation.svg" alt="Animated Terminal & ASCII 3D Cube" width="100%" />
+  <img src="https://raw.githubusercontent.com/Joy2247/Joy2247/main/ascii-animation.svg" alt="Animated Terminal & 3D ASCII Torus" width="100%" />
 </p>
 
 ---
