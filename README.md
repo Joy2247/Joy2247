@@ -53,13 +53,14 @@
 
 ---
 
-### 🚀 Featured Projects / Focus Areas
+### 🚀 Featured Projects & Repositories
 
-| Project / Focus | Tech Stack | Description |
+| Project / Repository | Tech Stack | Highlights |
 | :--- | :--- | :--- |
-| **Data Structures & Algorithms** | `C++` / `C` | Implementations and solutions to algorithmic problems focusing on time and space complexity. |
-| **Python Utilities & Automation** | `Python` | Practical scripts and tools built to automate everyday tasks and explore data. |
-| **Responsive Web Layouts** | `HTML5` / `CSS3` | Modern, responsive webpage templates and clean user interfaces. |
+| 🏥 [**LavasaCare Platform**](https://github.com/Joy2247/lavasacare-platform) | `TypeScript` | Full-stack healthcare service platform with robust modern architecture and patient-centric user flows. |
+| 🎓 [**Campus Learn**](https://github.com/Joy2247/campus_learn) | `HTML5` / `CSS3` | Interactive student learning hub designed to share academic resources, notes, and study guides. |
+| 🌐 [**First Website Showcase**](https://github.com/Joy2247/First-Website) | `HTML5` / `CSS3` | Foundational web development project showcasing clean semantic layout and responsive CSS styling. |
+| ⚡ **Algorithms & Systems** | `C++` / `C` / `Python` | Core problem solving, Data Structures & Algorithms, and automated system scripting. |
 
 ---
 
