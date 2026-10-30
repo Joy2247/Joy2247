@@ -1,9 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" width="100%" height="340">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 350" width="100%" height="350">
   <defs>
     <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#1e222a"/>
-      <stop offset="100%" stop-color="#161922"/>
+      <stop offset="0%" stop-color="#1c2128"/>
+      <stop offset="100%" stop-color="#161b22"/>
     </linearGradient>
+    <linearGradient id="cyanShimmer" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="50%" stop-color="#79c0ff"/>
+      <stop offset="100%" stop-color="#56d4dd"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
   </defs>
 
   <style>
@@ -21,7 +33,7 @@
 
     /* Blinking Terminal Cursor */
     .cursor {
-      animation: blink 0.8s infinite;
+      animation: blink 0.75s infinite;
       fill: #58a6ff;
     }
     @keyframes blink {
@@ -29,55 +41,177 @@
       50%, 100% { opacity: 0; }
     }
 
-    /* 4-Frame ASCII 3D Rotation Animation */
-    .ascii-frame {
+    /* 16-Frame Smooth Donut Animation */
+    .ascii-donut {
       font-family: 'Courier New', Consolas, monospace;
-      font-size: 11.5px;
+      font-size: 11px;
       line-height: 14px;
       white-space: pre;
-      fill: #58a6ff;
+      fill: url(#cyanShimmer);
+      font-weight: bold;
     }
 
-    .f1 { animation: cycle1 6s infinite; }
-    .f2 { animation: cycle2 6s infinite; }
-    .f3 { animation: cycle3 6s infinite; }
-    .f4 { animation: cycle4 6s infinite; }
 
-    @keyframes cycle1 {
-      0%, 24% { opacity: 1; visibility: visible; }
-      25%, 100% { opacity: 0; visibility: hidden; }
+    @keyframes dframe_0 {
+      0%, 0.00% { opacity: 0; visibility: hidden; }
+      0.01%, 6.24% { opacity: 1; visibility: visible; }
+      6.25%, 100% { opacity: 0; visibility: hidden; }
     }
-    @keyframes cycle2 {
-      0%, 24% { opacity: 0; visibility: hidden; }
-      25%, 49% { opacity: 1; visibility: visible; }
-      50%, 100% { opacity: 0; visibility: hidden; }
+    .donut-f0 {
+      animation: dframe_0 1.92s infinite;
     }
-    @keyframes cycle3 {
-      0%, 49% { opacity: 0; visibility: hidden; }
-      50%, 74% { opacity: 1; visibility: visible; }
-      75%, 100% { opacity: 0; visibility: hidden; }
+    
+    @keyframes dframe_1 {
+      0%, 6.25% { opacity: 0; visibility: hidden; }
+      6.26%, 12.49% { opacity: 1; visibility: visible; }
+      12.50%, 100% { opacity: 0; visibility: hidden; }
     }
-    @keyframes cycle4 {
-      0%, 74% { opacity: 0; visibility: hidden; }
-      75%, 99% { opacity: 1; visibility: visible; }
-      100% { opacity: 0; visibility: hidden; }
+    .donut-f1 {
+      animation: dframe_1 1.92s infinite;
     }
+    
+    @keyframes dframe_2 {
+      0%, 12.50% { opacity: 0; visibility: hidden; }
+      12.51%, 18.74% { opacity: 1; visibility: visible; }
+      18.75%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f2 {
+      animation: dframe_2 1.92s infinite;
+    }
+    
+    @keyframes dframe_3 {
+      0%, 18.75% { opacity: 0; visibility: hidden; }
+      18.76%, 24.99% { opacity: 1; visibility: visible; }
+      25.00%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f3 {
+      animation: dframe_3 1.92s infinite;
+    }
+    
+    @keyframes dframe_4 {
+      0%, 25.00% { opacity: 0; visibility: hidden; }
+      25.01%, 31.24% { opacity: 1; visibility: visible; }
+      31.25%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f4 {
+      animation: dframe_4 1.92s infinite;
+    }
+    
+    @keyframes dframe_5 {
+      0%, 31.25% { opacity: 0; visibility: hidden; }
+      31.26%, 37.49% { opacity: 1; visibility: visible; }
+      37.50%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f5 {
+      animation: dframe_5 1.92s infinite;
+    }
+    
+    @keyframes dframe_6 {
+      0%, 37.50% { opacity: 0; visibility: hidden; }
+      37.51%, 43.74% { opacity: 1; visibility: visible; }
+      43.75%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f6 {
+      animation: dframe_6 1.92s infinite;
+    }
+    
+    @keyframes dframe_7 {
+      0%, 43.75% { opacity: 0; visibility: hidden; }
+      43.76%, 49.99% { opacity: 1; visibility: visible; }
+      50.00%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f7 {
+      animation: dframe_7 1.92s infinite;
+    }
+    
+    @keyframes dframe_8 {
+      0%, 50.00% { opacity: 0; visibility: hidden; }
+      50.01%, 56.24% { opacity: 1; visibility: visible; }
+      56.25%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f8 {
+      animation: dframe_8 1.92s infinite;
+    }
+    
+    @keyframes dframe_9 {
+      0%, 56.25% { opacity: 0; visibility: hidden; }
+      56.26%, 62.49% { opacity: 1; visibility: visible; }
+      62.50%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f9 {
+      animation: dframe_9 1.92s infinite;
+    }
+    
+    @keyframes dframe_10 {
+      0%, 62.50% { opacity: 0; visibility: hidden; }
+      62.51%, 68.74% { opacity: 1; visibility: visible; }
+      68.75%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f10 {
+      animation: dframe_10 1.92s infinite;
+    }
+    
+    @keyframes dframe_11 {
+      0%, 68.75% { opacity: 0; visibility: hidden; }
+      68.76%, 74.99% { opacity: 1; visibility: visible; }
+      75.00%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f11 {
+      animation: dframe_11 1.92s infinite;
+    }
+    
+    @keyframes dframe_12 {
+      0%, 75.00% { opacity: 0; visibility: hidden; }
+      75.01%, 81.24% { opacity: 1; visibility: visible; }
+      81.25%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f12 {
+      animation: dframe_12 1.92s infinite;
+    }
+    
+    @keyframes dframe_13 {
+      0%, 81.25% { opacity: 0; visibility: hidden; }
+      81.26%, 87.49% { opacity: 1; visibility: visible; }
+      87.50%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f13 {
+      animation: dframe_13 1.92s infinite;
+    }
+    
+    @keyframes dframe_14 {
+      0%, 87.50% { opacity: 0; visibility: hidden; }
+      87.51%, 93.74% { opacity: 1; visibility: visible; }
+      93.75%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f14 {
+      animation: dframe_14 1.92s infinite;
+    }
+    
+    @keyframes dframe_15 {
+      0%, 93.75% { opacity: 0; visibility: hidden; }
+      93.76%, 99.99% { opacity: 1; visibility: visible; }
+      100.00%, 100% { opacity: 0; visibility: hidden; }
+    }
+    .donut-f15 {
+      animation: dframe_15 1.92s infinite;
+    }
+    
 
     .pulse-glow {
       animation: pulse 2.5s ease-in-out infinite alternate;
     }
     @keyframes pulse {
       0% { opacity: 0.85; }
-      100% { opacity: 1; filter: drop-shadow(0 0 5px rgba(126, 231, 135, 0.7)); }
+      100% { opacity: 1; filter: drop-shadow(0 0 6px rgba(126, 231, 135, 0.8)); }
     }
   </style>
 
   <!-- Terminal Window Box -->
-  <rect x="5" y="5" width="770" height="330" rx="12" class="terminal-bg"/>
+  <rect x="5" y="5" width="810" height="340" rx="12" class="terminal-bg"/>
   
   <!-- Window Header Bar -->
-  <path d="M 5 17 Q 5 5 17 5 L 763 5 Q 775 5 775 17 L 775 38 L 5 38 Z" class="header-bg"/>
-  <line x1="5" y1="38" x2="775" y2="38" stroke="#30363d" stroke-width="1"/>
+  <path d="M 5 17 Q 5 5 17 5 L 803 5 Q 815 5 815 17 L 815 38 L 5 38 Z" class="header-bg"/>
+  <line x1="5" y1="38" x2="815" y2="38" stroke="#30363d" stroke-width="1"/>
 
   <!-- Traffic Lights (Window Controls) -->
   <circle cx="26" cy="22" r="6" fill="#ff5f56"/>
@@ -85,76 +219,307 @@
   <circle cx="66" cy="22" r="6" fill="#27c93f"/>
 
   <!-- Window Title -->
-  <text x="390" y="26" class="term-title">shreyansh@dev:~ (zsh)</text>
+  <text x="410" y="26" class="term-title">shreyansh@dev:~ (zsh) — 3D ASCII Donut (donut.c in C)</text>
 
-  <!-- Left: Animated ASCII Art Rotating 3D Object -->
-  <g transform="translate(25, 60)">
-    <!-- Frame 1 -->
-    <g class="f1 ascii-frame">
-      <text x="0" y="20">           .--------.</text>
-      <text x="0" y="36">          /        /|</text>
-      <text x="0" y="52">         /        / |</text>
-      <text x="0" y="68">        *--------*  |</text>
-      <text x="0" y="84">        |  C /   |  |</text>
-      <text x="0" y="100">        |  C++   |  |</text>
-      <text x="0" y="116">        | PYTHON |  *</text>
-      <text x="0" y="132">        |        | /</text>
-      <text x="0" y="148">        |        |/ </text>
-      <text x="0" y="164">        *--------*  </text>
-      <text x="25" y="195" fill="#8b949e" font-size="11">[ 3D ASCII CUBE: 01 ]</text>
-    </g>
+  <!-- Left: 16-Frame Smooth Rotating 3D Donut -->
+  <g transform="translate(18, 55)" filter="url(#glow)">
+  <!-- Donut Frame 0 -->
+  <g class="donut-f0 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">         $$$$$$$$          </text>
+    <text x="0" y="75">      ###!!!!!!!!*##       </text>
+    <text x="0" y="90">     **!!!!=;;=!!!!**      </text>
+    <text x="0" y="105">    **!!=;-,...-;=!!**     </text>
+    <text x="0" y="120">    !!!!;~..  ..-;!!*!     </text>
+    <text x="0" y="135">    =!****!;  ;=*!*!!!     </text>
+    <text x="0" y="150">    ;!***#$@@@$$#***!=     </text>
+    <text x="0" y="165">     ;!****#$$#****!;      </text>
+    <text x="0" y="180">      ~;=********=;-       </text>
+    <text x="0" y="195">         ,~::::~,          </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 1 -->
+  <g class="donut-f1 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">           @@@@            </text>
+    <text x="0" y="60">       ###******###        </text>
+    <text x="0" y="75">     *!!*!!!*!!!**!*#      </text>
+    <text x="0" y="90">    =!!==;:~~~:;;=!!!!     </text>
+    <text x="0" y="105">    =;:~~,......-~;;=!=    </text>
+    <text x="0" y="120">    ;::~,..   ...,~:;;;    </text>
+    <text x="0" y="135">    ::~~-,=**!!;,-~::::    </text>
+    <text x="0" y="150">     ~::;=*#$$#!;::::~     </text>
+    <text x="0" y="165">      -:;=!!*!*!=;:~,      </text>
+    <text x="0" y="180">        .-:;;;;:~,.        </text>
+    <text x="0" y="195">                           </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 2 -->
+  <g class="donut-f2 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">         $$@@@@@           </text>
+    <text x="0" y="60">      #********###$$       </text>
+    <text x="0" y="75">     =;=!!!!**!*!!****     </text>
+    <text x="0" y="90">    ;;;;:::::;;===!!!*!    </text>
+    <text x="0" y="105">    :~-,,....,,-~::;;=!=   </text>
+    <text x="0" y="120">    -............,-~:;;;   </text>
+    <text x="0" y="135">     ......*$$!...,,-~~~   </text>
+    <text x="0" y="150">      .,-~;*!!=,....,,,    </text>
+    <text x="0" y="165">         ,:;==;~,....      </text>
+    <text x="0" y="180">                           </text>
+    <text x="0" y="195">                           </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 3 -->
+  <g class="donut-f3 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">      ##$$$$$$$$$          </text>
+    <text x="0" y="75">    =!!!*****####$$        </text>
+    <text x="0" y="90">    ;====!=!!****####*     </text>
+    <text x="0" y="105">    -,--~::;=;=!!!***!!    </text>
+    <text x="0" y="120">     .....,-~~:;;===!!==   </text>
+    <text x="0" y="135">       .......,-~~;;;;==   </text>
+    <text x="0" y="150">         .~=!;...,--~:::   </text>
+    <text x="0" y="165">            .,,....,,,,    </text>
+    <text x="0" y="180">                 ...       </text>
+    <text x="0" y="195">                           </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 4 -->
+  <g class="donut-f4 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">      $@@@$                </text>
+    <text x="0" y="75">    !##$$$$$$#             </text>
+    <text x="0" y="90">    =!**##$$$$$#           </text>
+    <text x="0" y="105">    ;;=**#*#######         </text>
+    <text x="0" y="120">     ~:=!!*!****#***       </text>
+    <text x="0" y="135">      .~:;==!!**!!!!!      </text>
+    <text x="0" y="150">        .-:;;==!!!!==;     </text>
+    <text x="0" y="165">          ,,-::;;;;;=;     </text>
+    <text x="0" y="180">            .,,-~~~~~~     </text>
+    <text x="0" y="195">               .....       </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 5 -->
+  <g class="donut-f5 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">      @@@$                 </text>
+    <text x="0" y="75">    #$@@$$#=;              </text>
+    <text x="0" y="90">   !#$$$$$#*-~=            </text>
+    <text x="0" y="105">   !###$$$##*,;*           </text>
+    <text x="0" y="120">   =!*######**;$@*         </text>
+    <text x="0" y="135">   :=!!***#****!#$*        </text>
+    <text x="0" y="150">    :==!*!!!***!!!!        </text>
+    <text x="0" y="165">     -;==!!=!!!!!!=:       </text>
+    <text x="0" y="180">       ~:;;======;=:       </text>
+    <text x="0" y="195">        .--~::::~~~        </text>
+    <text x="0" y="210">            .....          </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 6 -->
+  <g class="donut-f6 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">       @@$$$$              </text>
+    <text x="0" y="75">    $$$$$#*=;;!*           </text>
+    <text x="0" y="90">   #$$$#**;~:;;=!          </text>
+    <text x="0" y="105">  !#####*!;,..,:!*         </text>
+    <text x="0" y="120">  !*####**=~..-=###        </text>
+    <text x="0" y="135">  =!******!!;.#@@@#        </text>
+    <text x="0" y="150">  :=!*!!***!!!*#$#*        </text>
+    <text x="0" y="165">   :==!!!!!!!!!**!:        </text>
+    <text x="0" y="180">    -:;==!!=!!!;;;~        </text>
+    <text x="0" y="195">      ,::;;;;;::~.         </text>
+    <text x="0" y="210">         .....             </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 7 -->
+  <g class="donut-f7 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">       $@$$$$$$            </text>
+    <text x="0" y="75">     $$###!!=;!*!#         </text>
+    <text x="0" y="90">   *###*!!=;:;;==!!!       </text>
+    <text x="0" y="105">   *##*!=;~....-:=!!       </text>
+    <text x="0" y="120">  =****!=:,   .-;!**=      </text>
+    <text x="0" y="135">  =!!**!!!=   !#$##*;      </text>
+    <text x="0" y="150">   =!!!!****#$$@$$*!:      </text>
+    <text x="0" y="165">   ~==!!!!**####*!=;       </text>
+    <text x="0" y="180">     :;==!!!!=!!==~        </text>
+    <text x="0" y="195">       -~::;;::~.          </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 8 -->
+  <g class="donut-f8 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">         $$$$$$$$          </text>
+    <text x="0" y="75">      ###!!!!!!!!*##       </text>
+    <text x="0" y="90">     #*!!!==:;=!!!!**      </text>
+    <text x="0" y="105">    **!!=:-,..,-:=!!**     </text>
+    <text x="0" y="120">    !*!!;~..  ..~=!!!!     </text>
+    <text x="0" y="135">    !!**!*!;  ;!****!=     </text>
+    <text x="0" y="150">    =!***#$$@@$$#***!=     </text>
+    <text x="0" y="165">     ;!****#$$#****!=      </text>
+    <text x="0" y="180">      ~;=********==-       </text>
+    <text x="0" y="195">         ,~::::~,          </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 9 -->
+  <g class="donut-f9 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">           $$$$$@@$        </text>
+    <text x="0" y="75">        #*!=!!=*###$$      </text>
+    <text x="0" y="90">      !*!!=;;:;==!*###!    </text>
+    <text x="0" y="105">      !!=:-....~;=!*##*    </text>
+    <text x="0" y="120">     =**!:-.   ,:=!****=   </text>
+    <text x="0" y="135">     ;*#$$#*  ~==!!*!!!=   </text>
+    <text x="0" y="150">     ~=*$$@$$#****!!!!=    </text>
+    <text x="0" y="165">      ;!**####**!!!!==~    </text>
+    <text x="0" y="180">       -=*!!!*=!===;:      </text>
+    <text x="0" y="195">         .~::;;::~,        </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 10 -->
+  <g class="donut-f10 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">             $$$$@@        </text>
+    <text x="0" y="75">          *====*#$$$$$     </text>
+    <text x="0" y="90">         ==;;~~;**#$$$#    </text>
+    <text x="0" y="105">        *=:,..-;!*#####!   </text>
+    <text x="0" y="120">       #$$=-..~=!*###**=   </text>
+    <text x="0" y="135">       #$@@#.:!!******!=   </text>
+    <text x="0" y="150">       *#$#*!!!****!*!=;   </text>
+    <text x="0" y="165">       =!**!!!!!!!!!!;:    </text>
+    <text x="0" y="180">       ~=;==!==!!==;:~     </text>
+    <text x="0" y="195">        .~:;;:;;::~-       </text>
+    <text x="0" y="210">            .,..           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 11 -->
+  <g class="donut-f11 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">                $@@$       </text>
+    <text x="0" y="75">             ;=#$$@$$#     </text>
+    <text x="0" y="90">           =~-*#$$$$$#!    </text>
+    <text x="0" y="105">         !*;,*###$$##*!    </text>
+    <text x="0" y="120">        *$$=**######*!=    </text>
+    <text x="0" y="135">       *$#!***#****!!=~    </text>
+    <text x="0" y="150">      :!!!!*****!*!=;~     </text>
+    <text x="0" y="165">      ;==!!!!*!!!==:~      </text>
+    <text x="0" y="180">      ~;========;:~.       </text>
+    <text x="0" y="195">       ~:::::::~,.         </text>
+    <text x="0" y="210">          ....             </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 12 -->
+  <g class="donut-f12 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">               $@@@$       </text>
+    <text x="0" y="75">            $$$$$$$##!     </text>
+    <text x="0" y="90">          #$$$$$###*==     </text>
+    <text x="0" y="105">        #######*#!!!::     </text>
+    <text x="0" y="120">      !*#******!=!=:-      </text>
+    <text x="0" y="135">     !!!!!!!!!==::~,       </text>
+    <text x="0" y="150">    ;===!====;;~-.         </text>
+    <text x="0" y="165">    ;;=;;;;::--.           </text>
+    <text x="0" y="180">    ~~::~---..             </text>
+    <text x="0" y="195">      .....                </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 13 -->
+  <g class="donut-f13 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">                           </text>
+    <text x="0" y="60">         $$$$$$$$$##       </text>
+    <text x="0" y="75">      #$$$###****!*!!=     </text>
+    <text x="0" y="90">    *###*******!==:=;;     </text>
+    <text x="0" y="105">   !*!***!!!==;::~~---     </text>
+    <text x="0" y="120">  =!!=====;::~-,.....      </text>
+    <text x="0" y="135">  ;=;;;::~-,.......        </text>
+    <text x="0" y="150">  :~~~--,,..;==~.          </text>
+    <text x="0" y="165">   ,,,.....,,.             </text>
+    <text x="0" y="180">     .....                 </text>
+    <text x="0" y="195">                           </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 14 -->
+  <g class="donut-f14 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">          @@@@@@$          </text>
+    <text x="0" y="60">      $$$##*##****##       </text>
+    <text x="0" y="75">    *#***!**!*!!!!!==      </text>
+    <text x="0" y="90">   !!!!!===;::::::;;;=     </text>
+    <text x="0" y="105">  =!==;::~--,.....,-~:     </text>
+    <text x="0" y="120">  ;:;:~--............-     </text>
+    <text x="0" y="135">  ~~~-,,...=$@*,.....      </text>
+    <text x="0" y="150">   -,,....,;!!*;~-,.       </text>
+    <text x="0" y="165">     ....,~:==;:,          </text>
+    <text x="0" y="180">                           </text>
+    <text x="0" y="195">                           </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
+  <!-- Donut Frame 15 -->
+  <g class="donut-f15 ascii-donut">
+    <text x="0" y="15"></text>
+    <text x="0" y="30">                           </text>
+    <text x="0" y="45">           @@@@            </text>
+    <text x="0" y="60">       ###******###        </text>
+    <text x="0" y="75">     ***!!!!!*!!!!*!*      </text>
+    <text x="0" y="90">    !=!==;::~~::;;===!     </text>
+    <text x="0" y="105">   ;==;;~-,.....,~::;=     </text>
+    <text x="0" y="120">   ;;;:~-...   ...~~:;     </text>
+    <text x="0" y="135">   ::::~-,;!!**=,-~:::     </text>
+    <text x="0" y="150">    ~:::::!#$$#*=;::~      </text>
+    <text x="0" y="165">     ,~::=!!**!*=;:-       </text>
+    <text x="0" y="180">       .-~:;;;;:-.         </text>
+    <text x="0" y="195">                           </text>
+    <text x="0" y="210">                           </text>
+    <text x="0" y="225">                           </text>
+  </g>
 
-    <!-- Frame 2 -->
-    <g class="f2 ascii-frame">
-      <text x="0" y="20">            .---.   </text>
-      <text x="0" y="36">          /|     |\ </text>
-      <text x="0" y="52">         / |     | \</text>
-      <text x="0" y="68">        *  |     |  *</text>
-      <text x="0" y="84">        | \| C++ |/ |</text>
-      <text x="0" y="100">        |  |  C  |  |</text>
-      <text x="0" y="116">        | /| PY  |\ |</text>
-      <text x="0" y="132">        *  |     |  *</text>
-      <text x="0" y="148">         \ |     | /</text>
-      <text x="0" y="164">          \|     |/ </text>
-      <text x="25" y="195" fill="#8b949e" font-size="11">[ 3D ASCII CUBE: 02 ]</text>
-    </g>
-
-    <!-- Frame 3 -->
-    <g class="f3 ascii-frame">
-      <text x="0" y="20">          .--------. </text>
-      <text x="0" y="36">         /|        | </text>
-      <text x="0" y="52">        / |        | </text>
-      <text x="0" y="68">       *  *--------* </text>
-      <text x="0" y="84">       | /| HTML5  | </text>
-      <text x="0" y="100">       |/ | CSS3   | </text>
-      <text x="0" y="116">       *  | DEV    | </text>
-      <text x="0" y="132">        \ |        | </text>
-      <text x="0" y="148">         \|        | </text>
-      <text x="0" y="164">          *--------* </text>
-      <text x="25" y="195" fill="#8b949e" font-size="11">[ 3D ASCII CUBE: 03 ]</text>
-    </g>
-
-    <!-- Frame 4 -->
-    <g class="f4 ascii-frame">
-      <text x="0" y="20">             /\      </text>
-      <text x="0" y="36">            /  \     </text>
-      <text x="0" y="52">           /    \    </text>
-      <text x="0" y="68">          *------*   </text>
-      <text x="0" y="84">          |\ 2026/|   </text>
-      <text x="0" y="100">          | \DEV/ |   </text>
-      <text x="0" y="116">          |  \/   |   </text>
-      <text x="0" y="132">          *------*   </text>
-      <text x="0" y="148">           \    /    </text>
-      <text x="0" y="164">            \  /     </text>
-      <text x="25" y="195" fill="#8b949e" font-size="11">[ 3D ASCII CUBE: 04 ]</text>
-    </g>
+    <text x="35" y="252" fill="#8b949e" font-family="'Fira Code', monospace" font-size="10.5">[ 3D TORUS • 16-FRAME C LOOP ]</text>
   </g>
 
   <!-- Vertical Divider Line -->
-  <line x1="250" y1="50" x2="250" y2="310" stroke="#21262d" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <line x1="285" y1="50" x2="285" y2="325" stroke="#21262d" stroke-width="1.5" stroke-dasharray="4 4"/>
 
   <!-- Right: Interactive Neofetch Terminal Output -->
-  <g transform="translate(270, 58)" class="code-text">
+  <g transform="translate(305, 58)" class="code-text">
     <!-- Command 1 -->
     <text x="0" y="20">
       <tspan class="prompt">shreyansh@dev</tspan><tspan fill="#8b949e">:</tspan><tspan class="yellow">~</tspan><tspan class="prompt">$</tspan>
@@ -182,18 +547,18 @@
     </text>
 
     <!-- Command 2 with Cursor -->
-    <text x="0" y="196">
+    <text x="0" y="202">
       <tspan class="prompt">shreyansh@dev</tspan><tspan fill="#8b949e">:</tspan><tspan class="yellow">~</tspan><tspan class="prompt">$</tspan>
-      <tspan class="cmd"> gcc -O3 main.c &amp;&amp; ./a.out</tspan>
+      <tspan class="cmd"> gcc -O3 donut.c -lm &amp;&amp; ./donut</tspan>
     </text>
 
     <!-- Terminal Status Output -->
-    <text x="0" y="220" fill="#8b949e">
-      [<tspan fill="#7ee787">✔</tspan>] Build successful. Ready to ship code!
+    <text x="0" y="226" fill="#8b949e">
+      [<tspan fill="#7ee787">✔</tspan>] 3D torus rendered at 60 FPS in C
     </text>
-    <text x="0" y="242">
+    <text x="0" y="250">
       <tspan class="prompt">shreyansh@dev</tspan><tspan fill="#8b949e">:</tspan><tspan class="yellow">~</tspan><tspan class="prompt">$</tspan>
-      <rect x="135" y="231" width="8" height="15" class="cursor"/>
+      <rect x="135" y="239" width="8" height="15" class="cursor"/>
     </text>
   </g>
 </svg>
