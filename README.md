@@ -7,13 +7,7 @@
   </a>
 </p>
 
-<!-- 👤 Custom ASCII Portrait & Terminal Console -->
-<a href="https://ascii.rest/banner/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ascii.rest/banner/SHREYANSH.dark.svg?color=c0f500,4493f8&speed=fast&font=bold&shadow=ascii&fill=light&art=clojure&place=above&size=l&bg=000000">
-    <img alt="SHREYANSH" src="https://ascii.rest/banner/SHREYANSH.svg?color=c0f500,4493f8&speed=fast&font=bold&shadow=ascii&fill=light&art=clojure&place=above&size=l&bg=000000">
-  </picture>
-</a>
+
 
 <!-- 🍩 Infinite 3D ASCII Donut Loop from ascii.rest -->
 <p align="center">
