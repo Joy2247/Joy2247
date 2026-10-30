@@ -2,11 +2,12 @@
 ### Computer Science Student | Problem Solver | Aspiring Software Engineer
 
 <!-- ⚡ Animated ASCII Art Banner via ascii.rest -->
-  <img alt="SHREYANSH: Computer Science Student | C/C++ • Python • Web" src="https://ascii.rest/banner/SHREYANSH.svg?color=2563eb,0284c7&tagline=Computer%20Science%20Student%20%7C%20C%2FC%2B%2B%20%E2%80%A2%20Python%20%E2%80%A2%20Web">
-    </picture>
-  </a>
-</p>
-
+  <a href="https://ascii.rest/banner/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://ascii.rest/banner/SHREYANSH.dark.svg?color=c0f500,4493f8&speed=fast&font=bold&shadow=ascii&fill=light&art=clojure&place=above&size=l&bg=000000">
+    <img alt="SHREYANSH" src="https://ascii.rest/banner/SHREYANSH.svg?color=c0f500,4493f8&speed=fast&font=bold&shadow=ascii&fill=light&art=clojure&place=above&size=l&bg=000000">
+  </picture>
+</a>
 
 
 <!-- 🍩 Infinite 3D ASCII Donut Loop from ascii.rest -->
