@@ -11,6 +11,11 @@
   </a>
 </p>
 
+<!-- 👤 Custom ASCII Portrait & Terminal Console -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/Joy2247/Joy2247/main/ascii-portrait.svg" alt="Shreyansh Patel ASCII Portrait" width="100%" />
+</p>
+
 <!-- 🍩 Infinite 3D ASCII Donut Loop from ascii.rest -->
 <p align="center">
   <a href="https://ascii.rest/donut/">
