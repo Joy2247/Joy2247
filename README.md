@@ -2,11 +2,7 @@
 ### Computer Science Student | Problem Solver | Aspiring Software Engineer
 
 <!-- ⚡ Animated ASCII Art Banner via ascii.rest -->
-<p align="center">
-  <a href="https://ascii.rest">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://ascii.rest/banner/SHREYANSH.dark.svg?color=38bdf8,58a6ff&tagline=Computer%20Science%20Student%20%7C%20C%2FC%2B%2B%20%E2%80%A2%20Python%20%E2%80%A2%20Web">
-      <img alt="SHREYANSH: Computer Science Student | C/C++ • Python • Web" src="https://ascii.rest/banner/SHREYANSH.svg?color=2563eb,0284c7&tagline=Computer%20Science%20Student%20%7C%20C%2FC%2B%2B%20%E2%80%A2%20Python%20%E2%80%A2%20Web">
+  <img alt="SHREYANSH: Computer Science Student | C/C++ • Python • Web" src="https://ascii.rest/banner/SHREYANSH.svg?color=2563eb,0284c7&tagline=Computer%20Science%20Student%20%7C%20C%2FC%2B%2B%20%E2%80%A2%20Python%20%E2%80%A2%20Web">
     </picture>
   </a>
 </p>
