@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 340" width="100%" height="340">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e222a"/>
+      <stop offset="100%" stop-color="#161922"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .terminal-bg { fill: #0d1117; stroke: #30363d; stroke-width: 1.5; rx: 12px; }
+    .header-bg { fill: url(#headerGrad); }
+    .term-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 12px; fill: #8b949e; font-weight: 600; text-anchor: middle; }
+    .code-text { font-family: 'Fira Code', 'Courier New', Consolas, monospace; font-size: 13px; fill: #c9d1d9; }
+    .prompt { fill: #58a6ff; font-weight: bold; }
+    .cmd { fill: #79c0ff; }
+    .green { fill: #7ee787; font-weight: bold; }
+    .yellow { fill: #f2cc60; }
+    .purple { fill: #d2a8ff; }
+    .cyan { fill: #56d4dd; }
+    .coral { fill: #ff7b72; }
+
+    /* Blinking Terminal Cursor */
+    .cursor {
+      animation: blink 0.8s infinite;
+      fill: #58a6ff;
+    }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    /* 4-Frame ASCII 3D Rotation Animation */
+    .ascii-frame {
+      font-family: 'Courier New', Consolas, monospace;
+      font-size: 11.5px;
+      line-height: 14px;
+      white-space: pre;
+      fill: #58a6ff;
+    }
+
+    .f1 { animation: cycle1 6s infinite; }
+    .f2 { animation: cycle2 6s infinite; }
+    .f3 { animation: cycle3 6s infinite; }
+    .f4 { animation: cycle4 6s infinite; }
+
+    @keyframes cycle1 {
+      0%, 24% { opacity: 1; visibility: visible; }
+      25%, 100% { opacity: 0; visibility: hidden; }
+    }
+    @keyframes cycle2 {
+      0%, 24% { opacity: 0; visibility: hidden; }
+      25%, 49% { opacity: 1; visibility: visible; }
+      50%, 100% { opacity: 0; visibility: hidden; }
+    }
+    @keyframes cycle3 {
+      0%, 49% { opacity: 0; visibility: hidden; }
+      50%, 74% { opacity: 1; visibility: visible; }
+      75%, 100% { opacity: 0; visibility: hidden; }
+    }
+    @keyframes cycle4 {
+      0%, 74% { opacity: 0; visibility: hidden; }
+      75%, 99% { opacity: 1; visibility: visible; }
+      100% { opacity: 0; visibility: hidden; }
+    }
+
+    .pulse-glow {
+      animation: pulse 2.5s ease-in-out infinite alternate;
+    }
+    @keyframes pulse {
+      0% { opacity: 0.85; }
+      100% { opacity: 1; filter: drop-shadow(0 0 5px rgba(126, 231, 135, 0.7)); }
+    }
+  </style>
+
+  <!-- Terminal Window Box -->
+  <rect x="5" y="5" width="770" height="330" rx="12" class="terminal-bg"/>
+  
+  <!-- Window Header Bar -->
+  <path d="M 5 17 Q 5 5 17 5 L 763 5 Q 775 5 775 17 L 775 38 L 5 38 Z" class="header-bg"/>
+  <line x1="5" y1="38" x2="775" y2="38" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Traffic Lights (Window Controls) -->
+  <circle cx="26" cy="22" r="6" fill="#ff5f56"/>
+  <circle cx="46" cy="22" r="6" fill="#ffbd2e"/>
+  <circle cx="66" cy="22" r="6" fill="#27c93f"/>
+
+  <!-- Window Title -->
+  <text x="390" y="26" class="term-title">shreyansh@dev:~ (zsh)</text>
+
+  <!-- Left: Animated ASCII Art Rotating 3D Object -->
+  <g transform="translate(25, 60)">
+    <!-- Frame 1 -->
+    <g class="f1 ascii-frame">
+      <text x="0" y="20">           .--------.</text>
+      <text x="0" y="36">          /        /|</text>
+      <text x="0" y="52">         /        / |</text>
+      <text x="0" y="68">        *--------*  |</text>
+      <text x="0" y="84">        |  C /   |  |</text>
+      <text x="0" y="100">        |  C++   |  |</text>
+      <text x="0" y="116">        | PYTHON |  *</text>
+      <text x="0" y="132">        |        | /</text>
+      <text x="0" y="148">        |        |/ </text>
+      <text x="0" y="164">        *--------*  </text>
+      <text x="25" y="195" fill="#8b949e" font-size="11">[ 3D ASCII CUBE: 01 ]</text>
+    </g>
+
+    <!-- Frame 2 -->
+    <g class="f2 ascii-frame">
+      <text x="0" y="20">            .---.   </text>
+      <text x="0" y="36">          /|     |\ </text>
+      <text x="0" y="52">         / |     | \</text>
+      <text x="0" y="68">        *  |     |  *</text>
+      <text x="0" y="84">        | \| C++ |/ |</text>
+      <text x="0" y="100">        |  |  C  |  |</text>
+      <text x="0" y="116">        | /| PY  |\ |</text>
+      <text x="0" y="132">        *  |     |  *</text>
+      <text x="0" y="148">         \ |     | /</text>
+      <text x="0" y="164">          \|     |/ </text>
+      <text x="25" y="195" fill="#8b949e" font-size="11">[ 3D ASCII CUBE: 02 ]</text>
+    </g>
+
+    <!-- Frame 3 -->
+    <g class="f3 ascii-frame">
+      <text x="0" y="20">          .--------. </text>
+      <text x="0" y="36">         /|        | </text>
+      <text x="0" y="52">        / |        | </text>
+      <text x="0" y="68">       *  *--------* </text>
+      <text x="0" y="84">       | /| HTML5  | </text>
+      <text x="0" y="100">       |/ | CSS3   | </text>
+      <text x="0" y="116">       *  | DEV    | </text>
+      <text x="0" y="132">        \ |        | </text>
+      <text x="0" y="148">         \|        | </text>
+      <text x="0" y="164">          *--------* </text>
+      <text x="25" y="195" fill="#8b949e" font-size="11">[ 3D ASCII CUBE: 03 ]</text>
+    </g>
+
+    <!-- Frame 4 -->
+    <g class="f4 ascii-frame">
+      <text x="0" y="20">             /\      </text>
+      <text x="0" y="36">            /  \     </text>
+      <text x="0" y="52">           /    \    </text>
+      <text x="0" y="68">          *------*   </text>
+      <text x="0" y="84">          |\ 2026/|   </text>
+      <text x="0" y="100">          | \DEV/ |   </text>
+      <text x="0" y="116">          |  \/   |   </text>
+      <text x="0" y="132">          *------*   </text>
+      <text x="0" y="148">           \    /    </text>
+      <text x="0" y="164">            \  /     </text>
+      <text x="25" y="195" fill="#8b949e" font-size="11">[ 3D ASCII CUBE: 04 ]</text>
+    </g>
+  </g>
+
+  <!-- Vertical Divider Line -->
+  <line x1="250" y1="50" x2="250" y2="310" stroke="#21262d" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+  <!-- Right: Interactive Neofetch Terminal Output -->
+  <g transform="translate(270, 58)" class="code-text">
+    <!-- Command 1 -->
+    <text x="0" y="20">
+      <tspan class="prompt">shreyansh@dev</tspan><tspan fill="#8b949e">:</tspan><tspan class="yellow">~</tspan><tspan class="prompt">$</tspan>
+      <tspan class="cmd"> neofetch --profile</tspan>
+    </text>
+
+    <!-- Output Info -->
+    <text x="0" y="48">
+      <tspan class="coral">OS</tspan><tspan fill="#8b949e">: </tspan><tspan>Linux &amp; Windows Developer Environment</tspan>
+    </text>
+    <text x="0" y="70">
+      <tspan class="coral">Role</tspan><tspan fill="#8b949e">: </tspan><tspan class="green pulse-glow">CS Undergrad &amp; Aspiring Software Engineer</tspan>
+    </text>
+    <text x="0" y="92">
+      <tspan class="coral">Languages</tspan><tspan fill="#8b949e">: </tspan><tspan class="cyan">C</tspan><tspan fill="#8b949e">, </tspan><tspan class="cyan">C++</tspan><tspan fill="#8b949e">, </tspan><tspan class="cyan">Python</tspan>
+    </text>
+    <text x="0" y="114">
+      <tspan class="coral">Web Stack</tspan><tspan fill="#8b949e">: </tspan><tspan class="yellow">HTML5</tspan><tspan fill="#8b949e">, </tspan><tspan class="yellow">CSS3</tspan><tspan fill="#8b949e"> (Responsive &amp; Semantic UI)</tspan>
+    </text>
+    <text x="0" y="136">
+      <tspan class="coral">Focus</tspan><tspan fill="#8b949e">: </tspan><tspan class="purple">Data Structures, Algorithms &amp; Automation</tspan>
+    </text>
+    <text x="0" y="158">
+      <tspan class="coral">Status</tspan><tspan fill="#8b949e">: </tspan><tspan fill="#7ee787">● Open for Internships &amp; Collaborations</tspan>
+    </text>
+
+    <!-- Command 2 with Cursor -->
+    <text x="0" y="196">
+      <tspan class="prompt">shreyansh@dev</tspan><tspan fill="#8b949e">:</tspan><tspan class="yellow">~</tspan><tspan class="prompt">$</tspan>
+      <tspan class="cmd"> gcc -O3 main.c &amp;&amp; ./a.out</tspan>
+    </text>
+
+    <!-- Terminal Status Output -->
+    <text x="0" y="220" fill="#8b949e">
+      [<tspan fill="#7ee787">✔</tspan>] Build successful. Ready to ship code!
+    </text>
+    <text x="0" y="242">
+      <tspan class="prompt">shreyansh@dev</tspan><tspan fill="#8b949e">:</tspan><tspan class="yellow">~</tspan><tspan class="prompt">$</tspan>
+      <rect x="135" y="231" width="8" height="15" class="cursor"/>
+    </text>
+  </g>
+</svg>
