@@ -3,12 +3,7 @@
 
 <!-- ⚡ Animated ASCII Art Banner via ascii.rest -->
 
-<a href="https://ascii.rest/banner/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ascii.rest/banner/SHREYANSH.dark.svg?color=ff0d00,74f844&font=bold&fill=light&bg=0d1117">
-    <img alt="SHREYANSH" src="https://ascii.rest/banner/SHREYANSH.svg?color=ff0d00,74f844&font=bold&fill=light&bg=0d1117">
-  </picture>
-</a>
+<a herf="https://ascii.rest/banner/SHREYANSH.svg?color=ff0d00,74f844&font=bold&fill=light&bg=0d1117"></a>
 
 
 <!-- 🍩 Infinite 3D ASCII Donut Loop from ascii.rest -->
