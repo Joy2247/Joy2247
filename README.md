@@ -2,10 +2,11 @@
 ### Computer Science Student | Problem Solver | Aspiring Software Engineer
 
 <!-- ⚡ Animated ASCII Art Banner via ascii.rest -->
-  <a href="https://ascii.rest/banner/">
+
+<a href="https://ascii.rest/banner/">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ascii.rest/banner/SHREYANSH.dark.svg?color=c0f500,4493f8&speed=fast&font=bold&shadow=ascii&fill=light&art=clojure&place=above&size=l&bg=000000">
-    <img alt="SHREYANSH" src="https://ascii.rest/banner/SHREYANSH.svg?color=c0f500,4493f8&speed=fast&font=bold&shadow=ascii&fill=light&art=clojure&place=above&size=l&bg=000000">
+    <source media="(prefers-color-scheme: dark)" srcset="https://ascii.rest/banner/SHREYANSH.dark.svg?color=ff0d00,74f844&font=bold&fill=light&bg=0d1117">
+    <img alt="SHREYANSH" src="https://ascii.rest/banner/SHREYANSH.svg?color=ff0d00,74f844&font=bold&fill=light&bg=0d1117">
   </picture>
 </a>
 
