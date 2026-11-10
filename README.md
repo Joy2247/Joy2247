@@ -4,7 +4,7 @@
 
 ## Shreyansh Patel
 
-Computer Science student at **CHRIST University, Pune–Lavasa**. I work on systems programming, algorithmic problem solving, and responsive web applications.
+Computer Science student at **CHRIST University, Pune–Lavasa**. Focused on systems programming, algorithmic simulations, and building clean, performant full-stack software.
 
 <p>
   <b><a href="https://github.com/Joy2247">GitHub ↗︎</a></b>
@@ -14,8 +14,37 @@ Computer Science student at **CHRIST University, Pune–Lavasa**. I work on syst
 </p>
 
 <p align="center">
+  <img src="./assets/terminal-sysinfo.svg" width="100%" alt="Developer Workstation and Diagnostic Readout featuring ASCII Avatar">
+</p>
+
+<details>
+<summary><b>View High-Resolution Biometric ASCII Telemetry Card</b></summary>
+<br>
+<p align="center">
+  <img src="./assets/ascii-portrait.svg" width="100%" alt="Shreyansh Patel ASCII Portrait Telemetry Matrix">
+</p>
+</details>
+
+<p align="center">
   <img src="./assets/divider.svg" width="100%" alt="tactical divider">
 </p>
+
+## Developer Specification
+
+```c
+// shreyansh.c — Engineer Profile Configuration
+#include <developer.h>
+
+const Developer shreyansh = {
+    .name        = "Shreyansh Patel",
+    .handle      = "Joy2247",
+    .affiliation = "CHRIST University, Pune–Lavasa",
+    .focus       = SYSTEMS | ALGORITHMS | FULL_STACK,
+    .languages   = { "C", "C++", "Python", "TypeScript" },
+    .toolchain   = { "GCC", "GDB", "Make", "Git", "Linux" },
+    .status      = "Ready for Software Engineering Internships"
+};
+```
 
 ## Selected projects
 
@@ -27,22 +56,33 @@ Computer Science student at **CHRIST University, Pune–Lavasa**. I work on syst
 </p>
 
 <details>
-<summary><b>About these projects</b></summary>
+<summary><b>Engineering details for these projects</b></summary>
 
-- **LavasaCare Platform** — full-stack healthcare platform engineered for modern clinic workflows, patient health record management, and accessible appointment flows.
-- **Campus Learn** — centralized student learning hub designed to share academic coursework, notes, and exam preparation resources.
-- **Algorithms &amp; Systems** — computational implementations and simulations including a real-time mathematical 3D torus rendering engine in pure C/C++ and data structure benchmarks.
-- **Web Interfaces** — responsive layout engines, clean component systems, and accessible interactive interfaces using semantic HTML5 and modern CSS3.
+- **LavasaCare Platform** — Full-stack healthcare service platform built with TypeScript, structured for clinic patient workflows, secure records management, and accessible appointment routing.
+- **Campus Learn** — Student-centered educational resource sharing hub providing rapid access to course materials, categorized study guides, and peer notes.
+- **Algorithms &amp; Systems** — Algorithmic problem solving and graphics simulations, including a real-time mathematical 3D torus rendering engine executing frame-by-frame projection loops in pure C/C++.
+- **Web Interfaces** — Responsive frontend templates and semantic layout architectures engineered for multi-device parity with modern CSS3.
 
 </details>
 
-## Technologies
+## Technical Arsenal &amp; Toolchain
 
-**Core languages** &nbsp; `C` `C++` `Python` `TypeScript`
+**Low-level &amp; systems** &nbsp; `C (C11/C17)` `C++ (C++20)` `GCC` `GDB` `Make` `POSIX APIs`
 
-**Web &amp; interfaces** &nbsp; `HTML5` `CSS3` `JavaScript` `Tailwind CSS`
+**Scripting &amp; automation** &nbsp; `Python 3` `Bash` `Zsh` `PowerShell` `Regex`
 
-**Tools &amp; systems** &nbsp; `Git` `GitHub` `VS Code` `Linux` `GCC` `SVG`
+**Web &amp; full-stack** &nbsp; `TypeScript` `JavaScript` `HTML5` `CSS3` `Tailwind CSS` `REST APIs`
+
+**Environment &amp; tooling** &nbsp; `Linux / WSL2` `Git &amp; GitHub` `VS Code` `Neovim` `Alacritty` `tmux`
+
+## Engineering Telemetry &amp; Metrics
+
+<p align="center">
+  <img src="https://github-stats-extended.vercel.app/api?username=Joy2247&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="GitHub Stats" />
+  <img src="https://streak-stats.demolab.com/?user=Joy2247&theme=tokyonight&hide_border=true" alt="GitHub Streak" />
+  <br/>
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Joy2247&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages" />
+</p>
 
 ## More repositories
 

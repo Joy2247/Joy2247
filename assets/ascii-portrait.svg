@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 880 430" width="100%" height="auto" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#11161d"/>
+      <stop offset="100%" stop-color="#0b0e13"/>
+    </linearGradient>
+    <linearGradient id="cyanBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <pattern id="dotGrid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#1e293b" opacity="0.6"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .frame-bg { fill: url(#cardGrad); stroke: #232a35; stroke-width: 1.5; rx: 12px; }
+    .portrait-text {
+      font-family: 'Consolas', 'Segoe UI Symbol', 'DejaVu Sans Mono', monospace;
+      font-size: 13.5px;
+      line-height: 16px;
+      fill: url(#cyanBlue);
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+    .label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace; font-size: 11px; fill: #64748b; letter-spacing: 0.5px; }
+    .val { font-family: 'Consolas', monospace; font-size: 13px; fill: #f8fafc; font-weight: 600; }
+    .cyan { fill: #38bdf8; font-weight: 600; }
+    .green { fill: #34d399; font-weight: 600; }
+    .purple { fill: #c084fc; }
+    .amber { fill: #fbbf24; }
+    .badge { rx: 4px; fill: #1e293b; stroke: #334155; stroke-width: 1; }
+  </style>
+
+  <!-- Card Background -->
+  <rect x="6" y="6" width="868" height="418" rx="12" class="frame-bg"/>
+  <rect x="6" y="6" width="868" height="418" rx="12" fill="url(#dotGrid)"/>
+
+  <!-- Chamfered Accent Corners -->
+  <path d="M 6 30 L 30 6" stroke="#38bdf8" stroke-width="2" fill="none"/>
+  <path d="M 850 6 L 874 30" stroke="#232a35" stroke-width="2" fill="none"/>
+  <path d="M 6 400 L 30 424" stroke="#232a35" stroke-width="2" fill="none"/>
+  <path d="M 850 424 L 874 400" stroke="#38bdf8" stroke-width="2" fill="none"/>
+
+  <!-- Header Micro-bar -->
+  <line x1="6" y1="40" x2="874" y2="40" stroke="#232a35" stroke-width="1"/>
+  <circle cx="26" cy="23" r="5" fill="#f87171"/>
+  <circle cx="44" cy="23" r="5" fill="#fbbf24"/>
+  <circle cx="62" cy="23" r="5" fill="#34d399"/>
+  <text x="82" y="27" font-family="'Consolas', monospace" font-size="12" fill="#94a3b8" font-weight="600">shreyansh_ascii_avatar.telemetry // 64x68 MATRIX // UTF-8 BRAILLE</text>
+  <text x="850" y="27" font-family="'Consolas', monospace" font-size="11" fill="#34d399" text-anchor="end">STATUS: OK [200]</text>
+
+  <!-- Left: High-Res Braille ASCII Portrait -->
+  <g transform="translate(36, 52)" class="portrait-text">
+    <text x="0" y="18">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="34">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="50">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣴⣶⣶⣿⣿⣿⣷⣶⣶⣦⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="66">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="82">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣟⣛⠛⢿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="98">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⠿⣿⣿⣉⡛⢿⣉⡛⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="114">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⢤⣤⣿⣿⣿⣿⣿⣥⣴⣤⣀⢉⠻⡟⠀⠉⢹⣗⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="130">⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣣⠿⢿⣿⣿⣿⡿⣇⠈⠂⠉⠛⢻⣧⡗⢦⣤⣾⠿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="146">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⣿⣠⣿⣿⣿⣿⠁⠀⠀⠀⢀⡠⠴⠏⠉⡿⠋⠿⣶⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="162">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⠗⣿⣿⣿⡿⢀⣤⣤⣤⣬⣁⡲⠄⢀⠑⡀⠒⠾⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="178">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⣿⣿⠁⡇⠈⢹⠟⠛⠒⠌⢙⠲⢦⡁⠁⠀⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="194">⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣿⣿⣿⣧⣱⡆⠀⠹⠒⠤⠀⢀⠈⠲⣽⣦⡀⣠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="210">⣀⣀⣀⣠⣤⣶⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣄⡀⢰⣤⣀⣈⠽⠛⠀⢉⣴⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="226">⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣏⠛⣿⣿⣿⣿⣿⣽⣅⡏⢻⣤⣤⣼⣧⠞⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="242">⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="258">⣿⣿⣿⣿⣿⣿⣿⣿⡁⣸⡇⣿⠀⠀⠙⠉⠉⠙⢿⣿⠋⠉⣠⣿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="274">⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⣀⣤⠞⢋⣴⣾⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="290">⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣄⣀⣀⣤⣿⣿⠟⣩⠿⣿⡟⢹⣄⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="306">⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⢇⣠⣿⣷⣿⣿⣿⣿⣷⣶⣦⣄⠀⠀⠀⠀⠀⠀</text>
+    <text x="0" y="322">⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣄⣠⣄⣀⠀</text>
+    <text x="0" y="338">⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿</text>
+    <text x="0" y="354">⠁⠀⠀⠉⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿</text>
+  </g>
+
+  <!-- Vertical Divider -->
+  <line x1="430" y1="52" x2="430" y2="410" stroke="#232a35" stroke-width="1.2" stroke-dasharray="3 4"/>
+
+  <!-- Right: Identity & Technical Telemetry -->
+  <g transform="translate(460, 64)">
+    <!-- Identity Header -->
+    <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', serif" font-size="24" fill="#ffffff" font-weight="bold">Shreyansh Patel</text>
+    <text x="0" y="42" font-family="'Consolas', monospace" font-size="13" fill="#38bdf8">@Joy2247 // Systems &amp; Software Developer</text>
+
+    <!-- Bio Summary -->
+    <text x="0" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#94a3b8">
+      Computer Science Undergraduate at <tspan fill="#f8fafc" font-weight="600">CHRIST University, Pune–Lavasa</tspan>.
+    </text>
+    <text x="0" y="94" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#94a3b8">
+      Engineering low-level POSIX systems, high-efficiency algorithmic
+    </text>
+    <text x="0" y="114" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" fill="#94a3b8">
+      simulations, and robust full-stack software architectures.
+    </text>
+
+    <!-- Key-Value Telemetry Block -->
+    <g transform="translate(0, 138)">
+      <line x1="0" y1="0" x2="380" y2="0" stroke="#232a35" stroke-width="1"/>
+      
+      <text x="0" y="24" class="label">DEVELOPER SPECS</text>
+      <text x="0" y="44" class="val">Toolchain: <tspan class="cyan">GCC 15.2</tspan> · <tspan class="cyan">Clang</tspan> · <tspan class="cyan">GDB</tspan> · <tspan class="cyan">Make</tspan></text>
+      <text x="0" y="66" class="val">Languages: <tspan class="purple">C17</tspan> · <tspan class="purple">C++20</tspan> · <tspan class="purple">Python</tspan> · <tspan class="purple">TypeScript</tspan></text>
+      <text x="0" y="88" class="val">Environment: <tspan class="amber">Arch Linux / WSL2</tspan> · <tspan class="amber">Neovim</tspan> · <tspan class="amber">tmux</tspan></text>
+      <text x="0" y="110" class="val">Availability: <tspan class="green">● Software Engineering Internships</tspan></text>
+      
+      <line x1="0" y1="126" x2="380" y2="126" stroke="#232a35" stroke-width="1"/>
+    </g>
+
+    <!-- Biometric Status Badges -->
+    <g transform="translate(0, 286)">
+      <!-- Badge 1 -->
+      <rect x="0" y="0" width="115" height="28" rx="6" fill="#182230" stroke="#0284c7" stroke-width="1"/>
+      <text x="12" y="18" font-family="'Consolas', monospace" font-size="11.5" fill="#38bdf8" font-weight="600">⚡ ASCII: UTF-8</text>
+
+      <!-- Badge 2 -->
+      <rect x="125" y="0" width="125" height="28" rx="6" fill="#132420" stroke="#059669" stroke-width="1"/>
+      <text x="137" y="18" font-family="'Consolas', monospace" font-size="11.5" fill="#34d399" font-weight="600">✔ AUTH: VERIFIED</text>
+
+      <!-- Badge 3 -->
+      <rect x="260" y="0" width="120" height="28" rx="6" fill="#201a2c" stroke="#9333ea" stroke-width="1"/>
+      <text x="272" y="18" font-family="'Consolas', monospace" font-size="11.5" fill="#c084fc" font-weight="600">★ REPO: JOY2247</text>
+    </g>
+
+    <!-- Fingerprint Hash -->
+    <text x="0" y="340" font-family="'Consolas', monospace" font-size="10.5" fill="#64748b">
+      SHA256: 7edb581b889... // TELEMETRY LINKED
+    </text>
+  </g>
+</svg>
