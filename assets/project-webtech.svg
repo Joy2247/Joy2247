@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="656" height="396" viewBox="-8 -8 656 396" role="img" aria-labelledby="title">
+  <title id="title">Web Interfaces — Responsive UI · HTML5 &amp; CSS3</title>
+  <defs>
+    <radialGradient id="halo">
+      <stop stop-color="#f43f5e" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#f43f5e" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="roseGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fda4af"/>
+      <stop offset=".5" stop-color="#f43f5e"/>
+      <stop offset="1" stop-color="#be123c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Chamfered Outer Card Frame -->
+  <path d="M1 1h608l30 30v348H1Z" fill="#10131b" stroke="#33343d" stroke-width="2"/>
+  <path d="M1 1h76M1 1v35M609 1l30 30" stroke="#f43f5e" stroke-width="3" fill="none"/>
+  <ellipse cx="350" cy="203" rx="268" ry="147" fill="url(#halo)"/>
+
+  <!-- Card Title -->
+  <text x="32" y="62" fill="#f7f2e9" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="40">Web Interfaces</text>
+
+  <!-- UI Grid Lines -->
+  <g fill="none" stroke="#4c1d29" stroke-width="1.5">
+    <ellipse cx="328" cy="200" rx="190" ry="75" stroke-dasharray="4 8"/>
+    <circle cx="328" cy="200" r="115"/>
+    <path d="M80 160 h490 M80 240 h490"/>
+  </g>
+
+  <!-- Stylized Floating Browser Window & Viewport Frames -->
+  <g transform="translate(198 115)">
+    <!-- Back Window Shadow / Base -->
+    <rect x="25" y="15" width="235" height="150" rx="12" fill="#0b080f" opacity="0.75"/>
+    <rect x="25" y="15" width="235" height="150" rx="12" fill="none" stroke="#3a1c25" stroke-width="1.5"/>
+
+    <!-- Main Front Browser Window -->
+    <rect x="0" y="0" width="245" height="155" rx="12" fill="#16121c" stroke="#f43f5e" stroke-width="2"/>
+
+    <!-- Browser Window Header Bar -->
+    <path d="M0 12 Q0 0 12 0 L233 0 Q245 0 245 12 L245 28 L0 28 Z" fill="#241724"/>
+    <line x1="0" y1="28" x2="245" y2="28" stroke="#432230" stroke-width="1"/>
+
+    <!-- Traffic Light Controls -->
+    <circle cx="16" cy="14" r="4.5" fill="#f43f5e"/>
+    <circle cx="30" cy="14" r="4.5" fill="#fbbf24"/>
+    <circle cx="44" cy="14" r="4.5" fill="#10b981"/>
+
+    <!-- URL Omnibox -->
+    <rect x="62" y="7" width="130" height="14" rx="4" fill="#130d17" stroke="#4c2134"/>
+
+    <!-- Floating UI Cards & Hero Section -->
+    <rect x="18" y="42" width="125" height="42" rx="6" fill="url(#roseGrad)" opacity="0.9"/>
+    <rect x="153" y="42" width="74" height="42" rx="6" fill="#2d1726" stroke="#fb7185" stroke-width="1.5"/>
+
+    <!-- Responsive Layout Columns -->
+    <rect x="18" y="94" width="62" height="46" rx="6" fill="#22121e" stroke="#4a1e2f"/>
+    <rect x="88" y="94" width="62" height="46" rx="6" fill="#22121e" stroke="#4a1e2f"/>
+    <rect x="158" y="94" width="69" height="46" rx="6" fill="#22121e" stroke="#4a1e2f"/>
+
+    <!-- Floating Code Tag Icon -->
+    <g transform="translate(180 82)">
+      <circle r="18" fill="#16121c" stroke="#f43f5e" stroke-width="2"/>
+      <path d="M-6 -6 L-11 0 L-6 6 M6 -6 L11 0 L6 6 M-2 7 L2 -7" stroke="#fecdd3" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- Calibration Reticles -->
+  <path d="M90 135h36m-18-18v36M525 245h36m-18-18v36" stroke="#541c2c"/>
+
+  <!-- Divider & Meta Status -->
+  <path d="M32 324h576" stroke="#343640"/>
+  <circle cx="42" cy="351" r="5" fill="#f43f5e"/>
+  <text x="60" y="358" fill="#c9cbd2" font-family="Arial,Helvetica,sans-serif" font-size="24">Responsive UI · HTML5 &amp; CSS3</text>
+  <path d="M576 350h28m-11-11 11 11-11 11" stroke="#f43f5e" stroke-width="2" fill="none"/>
+</svg>

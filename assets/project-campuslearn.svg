@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="656" height="396" viewBox="-8 -8 656 396" role="img" aria-labelledby="title">
+  <title id="title">Campus Learn — Academic resource hub · Active</title>
+  <defs>
+    <radialGradient id="halo">
+      <stop stop-color="#f59e0b" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#fde68a"/>
+      <stop offset=".5" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#b45309"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Chamfered Outer Card Frame -->
+  <path d="M1 1h608l30 30v348H1Z" fill="#10131b" stroke="#33343d" stroke-width="2"/>
+  <path d="M1 1h76M1 1v35M609 1l30 30" stroke="#f59e0b" stroke-width="3" fill="none"/>
+  <ellipse cx="350" cy="203" rx="268" ry="147" fill="url(#halo)"/>
+
+  <!-- Card Title -->
+  <text x="32" y="62" fill="#f7f2e9" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="40">Campus Learn</text>
+
+  <!-- Knowledge Graph Nodes & Orbital Rings -->
+  <g fill="none" stroke="#4d3a1a" stroke-width="1.5">
+    <ellipse cx="328" cy="200" rx="190" ry="75" stroke-dasharray="4 8"/>
+    <circle cx="328" cy="200" r="115"/>
+    <path d="M138 200 L248 150 M418 150 L518 200 M328 115 L328 75"/>
+  </g>
+
+  <!-- Knowledge Network Satellites -->
+  <g stroke="#f59e0b" stroke-width="2" fill="#241a08">
+    <circle cx="138" cy="200" r="9"/>
+    <circle cx="518" cy="200" r="9"/>
+    <circle cx="248" cy="150" r="7"/>
+    <circle cx="408" cy="150" r="7"/>
+    <circle cx="328" cy="75" r="8" fill="#fde68a"/>
+  </g>
+
+  <!-- Stylized Open Book & Knowledge Core -->
+  <g transform="translate(328 205)">
+    <!-- Base Book Spine & Cover -->
+    <path d="M0 25 C30 15 75 10 100 15 L95 75 C70 70 25 75 0 85 C-25 75 -70 70 -95 75 L-100 15 C-75 10 -30 15 0 25 Z" fill="#1a140b" stroke="#855914" stroke-width="2"/>
+
+    <!-- Left & Right Pages -->
+    <path d="M0 20 C-30 10 -70 6 -90 12 L-85 68 C-65 62 -25 66 0 76 Z" fill="url(#gold)" opacity="0.9"/>
+    <path d="M0 20 C30 10 70 6 90 12 L85 68 C65 62 25 66 0 76 Z" fill="url(#gold)" opacity="0.9"/>
+    
+    <!-- Central Knowledge Monolith Bookmark -->
+    <path d="M-6 10 h12 v40 l-6 -6 l-6 6 Z" fill="#ffffff" opacity="0.95"/>
+    
+    <!-- Code Lines on Pages -->
+    <g stroke="#78350f" stroke-width="2.5" stroke-linecap="round">
+      <path d="M-70 26 h40 M-70 38 h32 M-70 50 h42"/>
+      <path d="M30 26 h40 M30 38 h35 M30 50 h38"/>
+    </g>
+  </g>
+
+  <!-- Reticle Alignment Marks -->
+  <path d="M90 135h36m-18-18v36M525 245h36m-18-18v36" stroke="#5a4218"/>
+
+  <!-- Divider & Meta Status -->
+  <path d="M32 324h576" stroke="#343640"/>
+  <circle cx="42" cy="351" r="5" fill="#f59e0b"/>
+  <text x="60" y="358" fill="#c9cbd2" font-family="Arial,Helvetica,sans-serif" font-size="24">Academic resource hub · Active</text>
+  <path d="M576 350h28m-11-11 11 11-11 11" stroke="#f59e0b" stroke-width="2" fill="none"/>
+</svg>

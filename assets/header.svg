@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-labelledby="title desc">
+  <title id="title">Shreyansh Patel — Software &amp; Systems Developer</title>
+  <desc id="desc">An editorial nameplate in warm white and deep slate with a sculptural blue ribbon. Systems programming, automation, and interactive web experiences.</desc>
+  <defs>
+    <linearGradient id="ribbon" x1="823" y1="328" x2="1045" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1d4ed8"/>
+      <stop offset="0.48" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="fold" x1="876" y1="76" x2="1000" y2="173" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7dd3fc"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+    <radialGradient id="ambientGlow" cx="946" cy="201" r="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0284c7" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" rx="8" fill="#0f1319"/>
+  <rect width="1200" height="420" rx="8" fill="none" stroke="#262c36" stroke-width="1.5"/>
+
+  <!-- Left Header Elements -->
+  <path d="M60 62h30" stroke="#38bdf8" stroke-width="3"/>
+  <text x="106" y="69" fill="#94a3b8" font-family="'SFMono-Regular', Consolas, monospace" font-size="18" letter-spacing="3">SHREYANSH PATEL</text>
+  <text x="55" y="213" fill="#f8fafc" font-family="Georgia, 'Times New Roman', serif" font-size="118" font-style="italic" letter-spacing="-5">Shreyansh<tspan fill="#38bdf8">.</tspan></text>
+  <text x="62" y="265" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="26" letter-spacing="0.2">Systems programming, automation &amp; interactive web experiences.</text>
+
+  <!-- Right Geometric / Architectural Wireframe -->
+  <circle cx="946" cy="201" r="220" fill="url(#ambientGlow)"/>
+  <g fill="none" stroke="#242b35" stroke-width="1.2">
+    <circle cx="946" cy="201" r="145"/>
+    <ellipse cx="946" cy="201" rx="195" ry="75" transform="rotate(-38 946 201)"/>
+    <ellipse cx="946" cy="201" rx="170" ry="60" transform="rotate(45 946 201)"/>
+    <path d="M1132 61v20m-10-10h20M756 318v20m-10-10h20"/>
+  </g>
+
+  <!-- Sculptural Cyan-Blue Origami Ribbon -->
+  <path d="M879 78h151l-92 78H787z" fill="url(#fold)"/>
+  <path d="M1030 78 874 328H764L920 78z" fill="url(#ribbon)"/>
+  <path d="M764 328h110l66-55H830z" fill="#1e3a8a"/>
+  <path d="m920 79-155 248" fill="none" stroke="#93c5fd" stroke-opacity="0.75" stroke-width="1.5"/>
+
+  <!-- Sub-label 01 -->
+  <text x="1082" y="320" fill="#94a3b8" font-family="'SFMono-Regular', Consolas, monospace" font-size="20">01</text>
+
+  <!-- Bottom Technical Grid -->
+  <path d="M62 356h1076" stroke="#262c36"/>
+  <text x="62" y="390" fill="#94a3b8" font-family="'SFMono-Regular', Consolas, monospace" font-size="16" letter-spacing="2">SYSTEMS / ALGORITHMS / WEB</text>
+  <text x="1138" y="390" text-anchor="end" fill="#94a3b8" font-family="'SFMono-Regular', Consolas, monospace" font-size="16" letter-spacing="2">PUNE, INDIA</text>
+</svg>

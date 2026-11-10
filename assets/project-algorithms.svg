@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="656" height="396" viewBox="-8 -8 656 396" role="img" aria-labelledby="title">
+  <title id="title">Algorithms &amp; Systems — C/C++ · Data structures &amp; automation</title>
+  <defs>
+    <radialGradient id="halo">
+      <stop stop-color="#38bdf8" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cyanGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#7dd3fc"/>
+      <stop offset=".5" stop-color="#38bdf8"/>
+      <stop offset="1" stop-color="#0284c7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Chamfered Outer Card Frame -->
+  <path d="M1 1h608l30 30v348H1Z" fill="#10131b" stroke="#33343d" stroke-width="2"/>
+  <path d="M1 1h76M1 1v35M609 1l30 30" stroke="#38bdf8" stroke-width="3" fill="none"/>
+  <ellipse cx="350" cy="203" rx="268" ry="147" fill="url(#halo)"/>
+
+  <!-- Card Title -->
+  <text x="32" y="62" fill="#f7f2e9" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="40">Algorithms &amp; Systems</text>
+
+  <!-- Coordinate Grids & Mathematical Radar -->
+  <g fill="none" stroke="#173447" stroke-width="1.5">
+    <circle cx="328" cy="195" r="115"/>
+    <circle cx="328" cy="195" r="75" stroke-dasharray="4 6"/>
+    <path d="M188 195 h280 M328 55 v280"/>
+  </g>
+
+  <!-- 3D Torus Mathematical Mesh & Algorithm Graph -->
+  <g transform="translate(328 195)" fill="none">
+    <!-- Outer Equatorial Rings -->
+    <ellipse rx="135" ry="58" transform="rotate(-18)" stroke="#1e4e69" stroke-width="2"/>
+    <ellipse rx="105" ry="44" transform="rotate(-18)" stroke="url(#cyanGrad)" stroke-width="3"/>
+    <ellipse rx="68" ry="28" transform="rotate(-18)" stroke="#67e8f9" stroke-width="2"/>
+    <ellipse rx="36" ry="15" transform="rotate(-18)" stroke="#a5f3fc" stroke-width="1.5"/>
+
+    <!-- Meridional Cross-Section Rings -->
+    <ellipse rx="42" ry="92" transform="rotate(72)" stroke="#0284c7" stroke-width="2" stroke-dasharray="4 6"/>
+    <ellipse rx="42" ry="92" transform="rotate(-36)" stroke="#0284c7" stroke-width="2" stroke-dasharray="4 6"/>
+
+    <!-- Algorithmic Nodes & Pointers -->
+    <g fill="#0e2333" stroke="#38bdf8" stroke-width="2">
+      <circle cx="-100" cy="25" r="8"/>
+      <circle cx="100" cy="-25" r="8"/>
+      <circle cx="0" cy="-70" r="10" fill="#38bdf8"/>
+      <circle cx="0" cy="70" r="7"/>
+    </g>
+    <!-- Code Brackets Overlay -->
+    <path d="M-45 -25 L-65 0 L-45 25 M45 -25 L65 0 L45 25" stroke="#f0f9ff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Calibration Reticles -->
+  <path d="M90 135h36m-18-18v36M525 245h36m-18-18v36" stroke="#1d4257"/>
+
+  <!-- Divider & Meta Status -->
+  <path d="M32 324h576" stroke="#343640"/>
+  <circle cx="42" cy="351" r="5" fill="#38bdf8"/>
+  <text x="60" y="358" fill="#c9cbd2" font-family="Arial,Helvetica,sans-serif" font-size="24">C/C++ · Data structures &amp; automation</text>
+  <path d="M576 350h28m-11-11 11 11-11 11" stroke="#38bdf8" stroke-width="2" fill="none"/>
+</svg>

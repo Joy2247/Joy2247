@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="656" height="396" viewBox="-8 -8 656 396" role="img" aria-labelledby="title">
+  <title id="title">LavasaCare — Healthcare platform · In development</title>
+  <defs>
+    <radialGradient id="halo">
+      <stop stop-color="#10b981" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#34d399"/>
+      <stop offset="1" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Chamfered Outer Card Frame -->
+  <path d="M1 1h608l30 30v348H1Z" fill="#10131b" stroke="#33343d" stroke-width="2"/>
+  <path d="M1 1h76M1 1v35M609 1l30 30" stroke="#10b981" stroke-width="3" fill="none"/>
+  <ellipse cx="350" cy="203" rx="268" ry="147" fill="url(#halo)"/>
+
+  <!-- Card Title -->
+  <text x="32" y="62" fill="#f7f2e9" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="40">LavasaCare</text>
+
+  <!-- Background Monitor Grid -->
+  <g fill="none" stroke="#19332d" stroke-width="1.5">
+    <path d="M78 120h485v165H78zM146 120v165M235 120v165M324 120v165M413 120v165M502 120v165M78 162h485M78 204h485M78 246h485"/>
+  </g>
+
+  <!-- Stylized Shield & Heartbeat Pulse Waveform -->
+  <g transform="translate(328 190)">
+    <!-- Shield Outline -->
+    <path d="M0 -75 C45 -75 75 -65 75 -40 C75 25 35 65 0 85 C-35 65 -75 25 -75 -40 C-75 -65 -45 -75 0 -75 Z" fill="#0d231d" stroke="#10b981" stroke-width="2.5" opacity="0.85"/>
+    
+    <!-- Medical Cross -->
+    <path d="M-12 -28 h24 v16 h16 v24 h-16 v16 h-24 v-16 h-16 v-24 h16 Z" fill="url(#shieldGrad)" opacity="0.35"/>
+    
+    <!-- Continuous EKG Pulse Wave -->
+    <path d="M-220 5 h110 l16 -30 l18 65 l22 -85 l20 60 l14 -20 h220" fill="none" stroke="#34d399" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Pulse Target Points -->
+    <circle cx="-56" cy="-25" r="5" fill="#a7f3d0"/>
+    <circle cx="-38" cy="40" r="5" fill="#a7f3d0"/>
+    <circle cx="-16" cy="-45" r="6" fill="#ffffff"/>
+  </g>
+
+  <!-- Crosshairs / Calibration Points -->
+  <path d="M100 135h40m-20-20v40M510 245h40m-20-20v40" stroke="#244d42"/>
+
+  <!-- Divider & Meta Status -->
+  <path d="M32 324h576" stroke="#343640"/>
+  <circle cx="42" cy="351" r="5" fill="#10b981"/>
+  <text x="60" y="358" fill="#c9cbd2" font-family="Arial,Helvetica,sans-serif" font-size="24">Healthcare platform · In development</text>
+  <path d="M576 350h28m-11-11 11 11-11 11" stroke="#34d399" stroke-width="2" fill="none"/>
+</svg>
